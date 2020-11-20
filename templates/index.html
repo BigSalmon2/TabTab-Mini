@@ -25,6 +25,7 @@
                     <option value="gpt2-story">Story</option>
                     <option value="gpt2-film">Film</option>
                     <option value="gpt2-ads">Ads</option>
+                    <option value="gpt2-business">Business</option>
                 </select>
 
                 <input type="radio" name="length" checked="checked" value="short">short</input>
@@ -32,17 +33,34 @@
 
                 <textarea id="context" style="width:70%; height:40%; display: block; margin-bottom: 10px;"></textarea>
                 
-                <b>Result</b>
+                <b data-selected="true" data-label-id="0" style="position: relative; transition: none 0s ease 0s; cursor: move; top: -6px;">Result</b>
                 <div id="select_box">
-                    <ul style="width:100%">
+                    <ul>
                         <li class="item" onclick="concat(this.innerHTML)"></li>
                         <li class="item" onclick="concat(this.innerHTML)"></li>
                         <li class="item" onclick="concat(this.innerHTML)"></li>
                         <li class="item" onclick="concat(this.innerHTML)"></li>
                         <li class="item" onclick="concat(this.innerHTML)"></li>
+                        <li class="item" onclick="concat(this.innerHTML)"></li>
+                        <li class="item" onclick="concat(this.innerHTML)"></li>
+                        <li class="item" onclick="concat(this.innerHTML)"></li>
+                        <li class="item" onclick="concat(this.innerHTML)"></li>
+                        <li class="item" onclick="concat(this.innerHTML)"></li>
+                        <li class="item" onclick="concat(this.innerHTML)" style="position: relative; left: 200px; top: -241px;"></li>
+                        <li class="item" onclick="concat(this.innerHTML)" style="position: relative; left: 200px; top: -240px;"></li>
+                        <li class="item" onclick="concat(this.innerHTML)" style="position: relative; left: 200px; top: -240px;"></li>
+                        <li class="item" onclick="concat(this.innerHTML)" style="position: relative; left: 200px; top: -96px;"></li>
+                        <li class="item" onclick="concat(this.innerHTML)" style="position: relative; left: 200px; top: -264px;"></li>
+                        <li class="item" onclick="concat(this.innerHTML)" style="position: relative; left: 200px; top: -267px;"></li>
+                        <li class="item" onclick="concat(this.innerHTML)" style="position: relative; left: 200px; top: -264px;"></li>
+                        <li class="item" onclick="concat(this.innerHTML)" style="position: relative; left: 200px; top: -264px;"></li>
+                        <li class="item" onclick="concat(this.innerHTML)" style="position: relative; left: 200px; top: -264px;"></li>
+                        <li class="item" onclick="concat(this.innerHTML)" style="position: relative; left: 200px; top: -264px;"></li>
+
+
                     </ul>
                 </div>
-                <button id="btn_autocomplete" class="btn btn-primary" onclick="suggestion()">Auto Complete!</button>
+                <button id="btn_autocomplete" class="btn btn-primary" onclick="suggestion()" style="position: relative; left: 24px; top: -226px;">Auto Complete!</button>
             </div>
         </div>
     </body>
